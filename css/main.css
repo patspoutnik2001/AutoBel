@@ -1,0 +1,851 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+:root {
+  --primary-color: rgb(122,78,53);
+  --primary-colorRed: rgba(181, 0, 0, 0.626);
+  --second-color: rgb(whitesmoke);
+  --background: white;
+  --fourth-color: gray;
+}
+
+body {
+  background: var(--background);
+  margin: 0;
+  font-family: 'Poppins';
+  padding: 0;
+}
+
+body img {
+  margin: 0;
+  display: block;
+}
+
+.navbar {
+  background: var(--primary-color);
+}
+
+.navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: red;
+}
+
+.navbar .logo img {
+  width: 100px;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  margin: none;
+}
+
+.cardBodySub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cardBodySub .profile {
+  background: whitesmoke;
+  border-radius: 2em;
+  padding: 2em;
+  margin: 1em;
+}
+
+.cardBodySub .profile .information {
+  background: gray;
+  margin-bottom: 31em;
+  color: black;
+  border-radius: 2em;
+  border-bottom: 4em;
+  padding: 1em;
+}
+
+.cardBodySub .profile .information input[type="submit"] {
+  border: none;
+  border-radius: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .5em;
+}
+
+.cardBody {
+  background: var(--background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardBody .profile {
+  background: whitesmoke;
+  border-radius: 2em;
+  padding: 2em;
+  margin: 1em;
+}
+
+.cardBody .profile .information {
+  background: var(--fourth-color);
+  margin-bottom: 1em;
+  color: black;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.cardBody .profile .information input[type="submit"] {
+  border: none;
+  border-radius: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .5em;
+}
+
+.cardBody .profile .modify {
+  background: gray;
+  margin-bottom: 1em;
+  color: black;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+.cardBody .profile .modify .areaText {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  width: 80%;
+}
+
+.cardBody .profile .modify button[type="submit"] {
+  border: none;
+  border-radius: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .5em;
+}
+
+.cardBody .profile .delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: gray;
+  margin-bottom: 1em;
+  color: black;
+  border-radius: 2em;
+  padding: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardBody .profile .delete button[type="submit"] {
+  border-radius: 2em;
+  width: 100%;
+  background: gray;
+  border: none;
+  font-size: large;
+  cursor: pointer;
+}
+
+/*section {
+    padding: 5em 2em;
+}*/
+.mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.Gallery {
+  width: 100%;
+}
+
+.first-part {
+  margin: 0;
+  padding: 0;
+}
+
+.searching {
+  background: var(--primary-color);
+  margin: none;
+  border-radius: 7em;
+  padding: 0.6em 2em;
+  margin: 2em;
+  text-align: center;
+}
+
+.searching .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: none;
+  letter-spacing: .2;
+}
+
+.searching input[type="submit"] {
+  background: rgba(255, 251, 0, 0.726);
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  margin: 0.3em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+section.bottom {
+  background: var(--primary-color);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.bottom .littleIcon {
+  width: 2em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.confirmation {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.confirmation .content {
+  background: whitesmoke;
+  border-radius: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.confirmation .content .photo5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+}
+
+.confirmation .content .submit3 {
+  margin-top: 0.5em;
+  background: var(--primary-color);
+  border-radius: 2em;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+.ProductBig {
+  margin: 5em;
+  padding: 2em;
+  background: whitesmoke;
+  border-radius: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+}
+
+.ProductBig img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-myProduct {
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+}
+
+.card-myProduct .card-myProducts {
+  background: whitesmoke;
+  border-radius: 2em;
+  padding: 2em;
+}
+
+.card-myProduct .card-myProducts .MyProducts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding: 1em;
+  background: gray;
+  margin: 1.5em;
+  border-radius: 2em;
+}
+
+.card-myProduct .card-myProducts .MyProducts .photoMyproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-myProduct .card-myProducts .MyProducts .photoMyproduct img {
+  width: 200px;
+  height: auto;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  border-radius: 2em;
+}
+
+.card-myProduct .card-myProducts .MyProducts .photoMyproduct span {
+  text-decoration: none;
+  -webkit-text-decoration-color: gray;
+          text-decoration-color: gray;
+}
+
+.card-myProduct .card-myProducts .MyProducts .textMyproduct .NameProduct {
+  text-align: center;
+  font-size: large;
+  color: #000729;
+}
+
+.container1 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  margin: 2em;
+}
+
+.container1 .card-filter {
+  border-radius: 2em;
+  background: whitesmoke;
+  padding: 2em;
+}
+
+.container1 .card-filter .card-body {
+  border-radius: 2em;
+  padding: 2em;
+  background: gray;
+}
+
+.container1 .card-filter .card-body .btnSubmit1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.container1 .card-filter .btnSubmit {
+  border: none;
+  border-radius: 2em;
+  background: var(--primary-colorRed);
+  padding: .5em;
+  color: white;
+}
+
+.container1 .card-products {
+  border-radius: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  background: whitesmoke;
+}
+
+.container1 .card-products .col-md-4 {
+  margin: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5fr;
+      grid-template-rows: 5fr;
+  background: gray;
+  border-radius: 2em;
+}
+
+.container1 .card-products .col-md-4 .border-p-2 {
+  padding: 1.5em;
+  padding-bottom: none;
+  border-radius: 2em;
+}
+
+.container1 .card-products .col-md-4 .border-p-2 img {
+  width: 100%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.container1 .card-products .col-md-4 .text1 {
+  padding-left: 2em;
+  border-radius: 2em;
+  font-size: small;
+}
+
+.container1 .card-products .col-md-4 .text1 img {
+  margin-right: 1em;
+  width: 10%;
+}
+
+.container1 .card-products .col-md-4 .btnChoseCar img {
+  text-align: end;
+  margin: 2em;
+  width: 20%;
+}
+
+.card-myProduct {
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+}
+
+.card-myProduct .card-myProducts {
+  background: whitesmoke;
+  border-radius: 2em;
+  padding: 2em;
+}
+
+.card-myProduct .card-myProducts .MyProducts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding: 1em;
+  background: gray;
+  margin: 1.5em;
+  border-radius: 2em;
+}
+
+.card-myProduct .card-myProducts .MyProducts .photoMyproduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-myProduct .card-myProducts .MyProducts .photoMyproduct img {
+  width: 200px;
+  height: auto;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  border-radius: 2em;
+}
+
+.card-myProduct .card-myProducts .MyProducts .photoMyproduct span {
+  text-decoration: none;
+  -webkit-text-decoration-color: gray;
+          text-decoration-color: gray;
+}
+
+.card-myProduct .card-myProducts .MyProducts .textMyproduct .NameProduct {
+  text-align: center;
+  font-size: large;
+  color: #000729;
+}
+
+.container2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  padding: 0.5em;
+  margin-top: 2em;
+}
+
+.container2 .contactForm {
+  width: 100%;
+  margin: none;
+}
+
+.container2 .contactForm .typeForm {
+  background: whitesmoke;
+  border-radius: 2em;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.container2 .contactForm .typeForm .label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  color: var(--primary-color);
+}
+
+.container2 .contactForm .typeForm .label2 {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  color: red;
+}
+
+.container2 .contactForm .typeForm .textarea {
+  width: 100%;
+  border-radius: 2em;
+  border: 1px solid gray;
+  padding: 1em;
+}
+
+.container2 .contactForm .typeForm .submit3 {
+  width: 100%;
+  margin-top: 0.5em;
+  background: var(--primary-color);
+  border-radius: 2em;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.container2 .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container2 .map .googleMap {
+  margin: none;
+  padding: none;
+}
+
+.container2 .map .googleMap iframe {
+  width: 100%;
+  border-radius: 2em;
+}
+
+@media only screen and (min-width: 787px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 1em;
+  }
+  .navbar nav ul.secondary-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
+  .navbar nav li.SignUp a {
+    color: var(--primary-colorRed);
+    border: 3px solid var(--primary-colorRed);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+    font-size: 1.2em;
+  }
+  .navbar nav li.SignUp a:hover {
+    background: var(--primary-colorRed);
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 3fr;
+        grid-template-columns: 3fr 3fr;
+    padding: 0.5em;
+  }
+  .container2 .contactForm {
+    width: 100%;
+    margin: none;
+  }
+  .container {
+    width: 1350px;
+  }
+  .container1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr;
+    grid-gap: 1em;
+    margin: 2em;
+  }
+  .container1 .card-filter {
+    border-radius: 2em;
+    padding: 2em;
+  }
+  .container1 .card-filter .card-body {
+    border-radius: 2em;
+    padding: 2em;
+  }
+  .container1 .card-filter .card-body .btnSubmit1 {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .container1 .card-filter .btnSubmit {
+    border: none;
+    border-radius: 2em;
+    background: var(--primary-colorRed);
+  }
+  .container1 .card-products {
+    border-radius: 2em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+  }
+  .container1 .card-products .col-md-4 {
+    margin: 1em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr 1fr;
+        grid-template-columns: 2fr 3fr 1fr;
+    border-radius: 2em;
+  }
+  .container1 .card-products .col-md-4 .border-p-2 {
+    padding: 1.5em;
+    padding-bottom: none;
+    border-radius: 2em;
+  }
+  .container1 .card-products .col-md-4 .text1 {
+    padding-left: 2em;
+    border-radius: 2em;
+    font-size: small;
+  }
+  .container1 .card-products .col-md-4 .text1 img {
+    margin-right: 1em;
+    width: 10%;
+  }
+  .container1 .card-products .col-md-4 .btnChoseCar img {
+    text-align: end;
+    margin: 2em;
+    width: 20%;
+  }
+  .card-myProduct {
+    background: white;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+    padding: 2em;
+  }
+  .card-myProduct .card-myProducts {
+    background: whitesmoke;
+    border-radius: 2em;
+    padding: 2em;
+  }
+  .card-myProduct .card-myProducts .MyProducts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+    padding: 1em;
+    background: gray;
+    margin: 1.5em;
+    border-radius: 2em;
+  }
+  .card-myProduct .card-myProducts .MyProducts .photoMyproduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-myProduct .card-myProducts .MyProducts .photoMyproduct img {
+    width: 75%;
+    height: auto;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    border-radius: 2em;
+  }
+  .card-myProduct .card-myProducts .MyProducts .photoMyproduct span {
+    text-decoration: none;
+    -webkit-text-decoration-color: gray;
+            text-decoration-color: gray;
+  }
+  .card-myProduct .card-myProducts .MyProducts .textMyproduct .NameProduct {
+    text-align: start;
+    font-size: large;
+    color: #000729;
+  }
+  .card-myProduct {
+    background: white;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+    padding: 2em;
+  }
+  .card-myProduct .card-myProducts {
+    background: whitesmoke;
+    border-radius: 2em;
+    padding: 2em;
+  }
+  .card-myProduct .card-myProducts .MyProducts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+    padding: 1em;
+    background: gray;
+    margin: 1.5em;
+    border-radius: 2em;
+  }
+  .card-myProduct .card-myProducts .MyProducts .photoMyproduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-myProduct .card-myProducts .MyProducts .photoMyproduct img {
+    width: 75%;
+    height: auto;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    border-radius: 2em;
+  }
+  .card-myProduct .card-myProducts .MyProducts .photoMyproduct span {
+    text-decoration: none;
+    -webkit-text-decoration-color: gray;
+            text-decoration-color: gray;
+  }
+  .card-myProduct .card-myProducts .MyProducts .textMyproduct .NameProduct {
+    text-align: start;
+    font-size: large;
+    color: #000729;
+  }
+}
+/*# sourceMappingURL=main.css.map */
