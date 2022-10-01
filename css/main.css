@@ -25,13 +25,7 @@ body img {
 }
 
 .navbar .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: red;
+  float: left;
 }
 
 .navbar .logo img {
@@ -47,7 +41,7 @@ body img {
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
-  margin: none;
+  position: static;
 }
 
 .cardBodySub {
@@ -655,7 +649,8 @@ nav li a:hover {
             align-items: center;
   }
   .navbar nav li.current a {
-    font-weight: bold;
+    position: sticky;
+    display: inline-flex;
   }
   .navbar nav li.SignUp a {
     color: var(--primary-colorRed);
